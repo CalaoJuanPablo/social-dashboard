@@ -1,32 +1,33 @@
 .header {
 	padding-top: 40px;
-	border-bottom: 1px solid $dark-grayish-blue;
-	@include container();
-	@include media(desktop-s) {
-		border: none;
-	}
-	h1 {
-		font-size: 28px;
-		margin-bottom: 8px;
-		color: $very-dark-blue;
-	}
-	p {
-		color: $dark-grayish-blue;
-		font-weight: 700;
-		margin-bottom: 24px;
-	}
-}
-
-.switch-dark {
-	display: flex;
-    justify-content: space-between;
-    align-items: center;
-	padding-top: 30px;
-	padding-bottom: 30px;
 	margin-bottom: 20px;
 	@include container();
-	span {
-		font-weight: 700;
-		color: $dark-grayish-blue;
+	&__title {
+		border-bottom: 1px solid $dark-grayish-blue;
+		@include media(desktop-s) {
+			border: none;
+		}
+		h1 {
+			font-size: 28px;
+			margin-bottom: 8px;
+			color: $very-dark-blue;
+		}
+		p {
+			color: $dark-grayish-blue;
+			font-weight: 700;
+			margin-bottom: 24px;
+		}
+	}
+	&__switch {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		@include container();
+		span {
+			font-weight: 700;
+			color: $dark-grayish-blue;
+		}
 	}
 }
