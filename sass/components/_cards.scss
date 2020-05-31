@@ -20,6 +20,17 @@
 		background-color: $light-grayish-blue;
 		border-radius: 5px;
 		padding: 38px 24px;
+		position: relative;
+		overflow: hidden;
+		&::before {
+			content: "";
+			height: 4px;
+			display: block;
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+		}
 		&--user {
 			display: flex;
 			align-items: center;
@@ -88,4 +99,17 @@
 	&--down {
 		color: $bright-red;
 	}
+}
+
+.facebook::before {
+	background: $facebook;
+}
+.twitter::before {
+	background: $twitter;
+}
+.instagram::before {
+	background-image: linear-gradient(to right, $instagram-from 0%, $instagram-to 100%);
+}
+.youtube::before {
+	background: $youtube;
 }
