@@ -2,10 +2,16 @@
 	padding-top: 40px;
 	margin-bottom: 20px;
 	@include container();
+	@include media(desktop-s) {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 30px;
+	}
 	&__title {
 		border-bottom: 1px solid $dark-grayish-blue;
 		@include media(desktop-s) {
 			border: none;
+			width: 700px;
 		}
 		h1 {
 			font-size: 28px;
@@ -25,9 +31,15 @@
 		padding-top: 30px;
 		padding-bottom: 30px;
 		@include container();
+		@include media(desktop-s) {
+			justify-content: flex-end;
+		}
 		span {
 			font-weight: 700;
 			color: $dark-grayish-blue;
+			@include media(desktop-s) {
+				margin-right: 12px;
+			}
 		}
 	}
 }
