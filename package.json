@@ -1,0 +1,16 @@
+{
+  "name": "social-dashboard",
+  "version": "1.0.0",
+  "description": "![Design preview for the Social media dashboard with theme switcher coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "sass:dev": "sass --watch --style compressed sass/styles.scss css/styles.css",
+    "sass:prod": "sass sass/styles.scss css/styles.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "CalaoJuanPablo",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.26.7"
+  }
+}
