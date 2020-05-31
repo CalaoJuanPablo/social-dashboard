@@ -1,3 +1,9 @@
+// Mixins
+@mixin container {
+	width: calc(100vw - 40px);
+	margin: 0 auto;
+}
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -6,4 +12,9 @@
 body {
 	font-family: 'Inter', sans-serif;
 	font-weight: 400;
+	color: $very-dark-blue;
+}
+
+section {
+	@include container();
 }

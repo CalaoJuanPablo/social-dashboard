@@ -1,0 +1,14 @@
+.header {
+	padding-top: 40px;
+	border-bottom: 1px solid $dark-grayish-blue;
+	@include container();
+	h1 {
+		font-size: 28px;
+		margin-bottom: 8px;
+	}
+	p {
+		color: $dark-grayish-blue;
+		font-weight: 700;
+		margin-bottom: 24px;
+	}
+}
