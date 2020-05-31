@@ -2,6 +2,7 @@
 	display: grid;
 	grid-template-columns: 1fr;
 	gap: 20px;
+	margin-bottom: 50px;
 	&__big {
 		display: flex;
 		flex-direction: column;
@@ -28,12 +29,36 @@
 			margin-bottom: 28px;
 			h3 {
 				font-size: 64px;
+				color: $very-dark-blue;
 			}
 			p {
 				text-transform: uppercase;
 				color: $dark-grayish-blue;
 				font-size: 14px;
 				letter-spacing: 5px;
+			}
+		}
+	}
+	&__small {
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+		padding: 24px 24px;
+		background-color: $light-grayish-blue;
+		border-radius: 5px;
+		&--header {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-bottom: 30px;
+		}
+		&--content {
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-end;
+			h1 {
+				font-size: 36px;
+				color: $very-dark-blue;
 			}
 		}
 	}

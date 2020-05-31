@@ -12,9 +12,13 @@
 body {
 	font-family: 'Inter', sans-serif;
 	font-weight: 400;
-	color: $very-dark-blue;
+	color: $dark-grayish-blue;
 }
 
 section {
 	@include container();
+}
+
+.overview {
+	margin-bottom: 20px;
 }
